@@ -1,0 +1,619 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    background-color: #fbfbf9;    
+}
+
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #313338;
+    padding: 6px;
+    box-shadow: 1px 2px 5px #333
+}
+
+.left-nav,
+.right-nav {
+    flex: 1;
+    text-align: center;
+    background-color: #313338;
+}
+
+.center-logo {
+    flex: 0;
+    text-align: center;
+    background-color: #313338;
+}
+
+img {
+    width: 220px;
+    height: 50px;
+    background-color: #313338;
+}
+
+.navlink {
+    position: relative;
+    margin-right: 30px;
+    font-size: 15px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #313338;
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+
+}
+
+
+.navlink::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #ffffff;
+    bottom: -5px;
+    left: 50%;
+    transition: width 0.3s, left 0.3s;
+}
+
+
+.navlink:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+.whatspopular{
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    height: 20px;
+    text-align: center;
+    word-spacing: 6px;
+    font-weight: bold;
+    font-family:'Times New Roman', Times, serif ;
+}
+
+.popular{
+    font-size: 30px;
+    box-shadow: 1px 2px 5px #333;
+}
+
+.test{
+    background-color: #e9e9ee;
+    margin-top: 25px;
+    height: 630px;  
+    width: 48%;
+    border-radius: 2%;
+    float:left;
+    box-shadow: 1px 2px 5px #333
+}
+
+.idetail{
+    position: absolute;
+    width: auto;
+    background-color: transparent;
+    top:320px;
+    left:330px;
+    font-weight: 450;
+}
+
+.list{
+    margin-top: 10px;   
+    background-color: transparent;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.test2{
+    background-color: #e9e9ee;
+    margin-top: 35px;
+    margin-left: 52%;
+    height: 630px;  
+    border-radius: 2%;
+    box-shadow: -1px 2px 5px #333
+}
+
+p{
+    background-color:#e9e9ee;
+    ;
+}
+
+.sdetail{
+    position: absolute;
+    width: auto;
+    background-color: transparent;
+    top:320px;
+    left:820px;
+    font-weight: 450;
+}
+ 
+.buttons {
+    position: relative;
+    top: 570px;
+    left: 60px;
+    margin: 4px;
+    padding: 10px 10px;
+    height: 40px;
+    width: 40px;
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+    outline: 2px solid #313338;
+    opacity: 75%;
+    box-shadow: 1px 2px 5px #333
+}
+
+#blacki{
+    background-color: #61605f;
+
+}
+
+#purplei{
+    background-color: #775292;
+}
+
+#goldi{
+    background-color: #f4e0b2;
+}
+
+#whitei{
+    background-color: #f3f3f3;
+
+}
+
+.iphone {
+    position:relative;
+    top: -35px;
+
+}
+  
+.front_iphone{
+    opacity: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+  
+.black_iphone{
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1; 
+}
+
+.purple_iphone{
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2; 
+}
+
+.gold_iphone{
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3; 
+}
+
+.white_iphone{
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index:4; 
+}
+  
+.front_iphone,.black_iphone,.gold_iphone,.purple_iphone,.white_iphone {
+    width:320px;
+    height:550px ;
+    transition: .5s;
+    background-color: transparent;
+}
+
+#blacki:hover ~ .iphone .black_iphone {
+    opacity: 1;
+}
+
+#purplei:hover ~ .iphone .purple_iphone {
+    opacity: 1;
+}
+
+#goldi:hover ~ .iphone .gold_iphone {
+    opacity: 1;
+}
+
+#whitei:hover ~ .iphone .white_iphone {
+    opacity: 1;
+}
+
+.buttons2 {
+    position: relative;
+    top: 570px;
+    right: -65%;
+    margin: 4px;
+    padding: 10px 10px;
+    height: 40px;
+    width: 40px;
+    border: none;
+    cursor: pointer;
+    border-radius: 25%;
+    outline: 2px solid #313338;
+    opacity: 75%;
+    box-shadow: 1px 2px 5px #333
+}
+
+#greys{
+    background-color: #6d706b;
+
+}
+
+#reds{
+    background-color: #bf5b50;
+}
+
+#blues{
+    background-color: #b0bfd7;
+}
+
+#whites{
+    background-color: #f2f1eb;
+
+}
+
+.samsung {
+    position:absolute;
+    top: 145px;
+    right: 20%;
+    margin: 0%;
+
+}
+
+.front_samsung,.grey_samsung,.red_samsung,.white_samsung,.blue_samsung{
+    width:290px;
+    height:550px;
+    transition: .5s;
+    background-color: transparent;
+}
+
+.front_samsung{
+    opacity: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+  
+.grey_samsung{
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1; 
+}
+
+.red_samsung{
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2; 
+}
+
+.white_samsung{
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3; 
+}
+
+.blue_samsung{
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index:4; 
+}
+
+#greys:hover ~ .samsung .grey_samsung {
+    opacity: 1;
+}
+
+#reds:hover ~ .samsung .red_samsung {
+    opacity: 1;
+}
+
+#whites:hover ~ .samsung .white_samsung {
+    opacity: 1;
+}
+
+#blues:hover ~ .samsung .blue_samsung {
+    opacity: 1;
+}
+
+#iphone_name{
+    position: absolute;
+    font-size: 40px;
+    top: 200px;
+    left: 400px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight:700;
+}
+#samsung_name{
+    position: absolute;
+    font-size: 40px;
+    top: 200px;
+    left: 850px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight:700;
+}
+
+.ibuy{
+    display: flex;
+    width: 100%;
+    background-color: #e9e9ee;
+}
+
+.ibutton{
+    position: relative;
+    font-size: 20px;
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-decoration: none;
+    padding: 14px 12px;
+    background-color:  rgb(57, 140, 229);
+    border: 1px solid rgb(145, 153, 153);
+    border-radius: 5px;
+    left:480px;
+    top:400px;
+}
+
+.ibutton:hover{
+    box-shadow: 1px 2px 5px #333;
+}
+
+.sbuy{
+    display: flex;
+    width: 100%;
+    background-color: #e9e9ee;
+}
+
+.sbutton{
+    position: relative;
+    font-size: 20px;
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-decoration: none;
+    padding: 14px 12px;
+    background-color:  rgb(57, 140, 229);
+    border: 1px solid rgb(145, 153, 153);
+    border-radius: 5px;
+    left:21%;
+    top:400px;
+}
+
+.sbutton:hover{
+    box-shadow: 1px 2px 5px #333;
+}
+
+.banner{
+    margin-top: 40px;
+    height: 600px;
+    width: 100%;
+    opacity: 95%;
+    box-shadow: 1px 2px 5px #333
+}
+
+::-webkit-scrollbar {
+    width: 12px;               
+}
+  
+::-webkit-scrollbar-track {
+    background: transparent;        
+}
+
+::-webkit-scrollbar-thumb {
+    background-color:  #313338;    
+    border-radius: 20px;       
+    border: 3px solid rgb(87, 87, 85);  
+}
+
+.mobile-scroll{
+    margin-top: 50px;
+    margin-bottom: -20px;
+    padding-bottom: 20px;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 12%;
+    overflow-x: auto;
+    gap: 20px;
+}
+
+.mobile-element{
+    padding-bottom: 10px;
+    background-color: #e9e9ee;
+    border-radius: 5%;
+    text-align: center;
+    box-shadow: 1px 2px 5px #333
+}
+
+.mobile-element >a>  img{
+    background-color: transparent;
+    height: 200px;
+    width: 190px;   
+    margin-top: 5px; 
+}
+
+.mobilebutton{
+    position: relative;
+    text-align: center;
+    font-size: 12px;
+    color:rgb(0, 72, 255);
+    font-weight: 600;
+    letter-spacing: 1px;
+    background-color: transparent;
+}
+
+.imagelink{
+    background-color: transparent;
+    height: 200px;
+    width: 200px;   
+    margin-top: 5px; 
+}
+
+.phonename{
+    position: relative;
+    text-align: center;
+    color: blue;
+    text-decoration:none;
+    font-weight: 600;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.price{
+    margin-top:20px;
+}
+
+.mobiledeals{
+    position: relative;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    height: 20px;
+    text-align: center;
+    word-spacing: 6px;
+    font-weight: bold;
+    font-family:'Times New Roman', Times, serif ;
+}
+
+.mdeals{
+    font-size: 40px;
+    font-family:'Courier New', Courier, monospace;
+    letter-spacing: 5px;
+    box-shadow: 1px 2px 5px #333;
+}
+
+.laptop-scroll{
+    margin-top: 50px;
+    margin-bottom: -20px;
+    padding-bottom: 20px;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 12%;
+    overflow-x: auto;
+    gap: 20px;
+}
+
+.laptop-element{
+    padding-bottom: 10px;
+    background-color: #e9e9ee;
+    border-radius: 5%;
+    text-align: center;
+    box-shadow: 1px 2px 5px #333;
+}
+
+.laptop-element >a>  img{
+    background-color: transparent;
+    height: 200px;
+    width: 190px;   
+    margin-top: 5px; 
+}
+
+.laptopname{
+    position: relative;
+    text-align: center;
+    color: blue;
+    text-decoration:none;
+    font-weight: 600;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.ldeals{
+    font-size: 40px;
+    font-family:'Courier New', Courier, monospace;
+    letter-spacing: 5px;
+    box-shadow: 1px 2px 5px #333;
+}
+
+.laptopdeals{
+    position: relative;
+    margin-top: 40px;
+    margin-bottom: 0px;
+    height: 20px;
+    text-align: center;
+    word-spacing: 6px;
+    font-weight: bold;
+    font-family:'Times New Roman', Times, serif ;
+}
+
+footer {
+    margin-top: 50px;
+    background-color: #313338;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    background-color: #313338;
+}
+
+.footer-logo{
+    background-color: #313338;
+}
+
+.footer-logo img {
+    width: 200px;
+    height: auto;
+    background-color: #313338;
+}
+
+.footer-links ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    background-color: #313338;
+}
+
+.footer-links ul li {
+    margin-right: 20px;
+    background-color: #313338;
+}
+
+.footer-links ul li a {
+    color: #ffffff;
+    font-size: 20px;
+    text-decoration: none;
+    background-color: #313338;
+}
+
+.footer-social{
+    background-color:#313338;
+}
+
+.footer-social a {
+    display: relative;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: #313338;
+    color: white;
+    font-size: 30px;
+}
+
+.footer-bottom {
+    color: black;
+    text-align: center;
+    margin-top: 20px;
+}
